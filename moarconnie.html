@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+		<link rel="stylesheet" href="bootstrap.js">
+		<link rel="stylesheet" href="bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body background = "gplaypattern_@2X.png">
+	<body>
+
+		<div class="container">
+			<div class="header-wrapper">
+				<h1 class="name" id="full-name"><b>CONNIE LIU</b></h1>
+			</div>
+			<div class="navbar">
+				<li>
+					<a href="index.html">PROJECTS</a>
+				</li>
+				<li>
+					<a href="personal.html">PERSONAL</a>
+				</li>
+				<li>
+					<a href="resume.html">RESUME</a> </h2>
+				</li>
+			</div>
+
+		<div class="project_content" id="personal_content">
+			<h1 class="center" id="project_content_title"><b>WELL HELLO THERE</b></h1>
+
+			<p id="project_content_text"> You're a tenacious one you ;) Anyhow, you've made it this far so here you go...<b> An abundance of things that are so Connie that they transcend all things Connie. </b> Or in more understandable terms, a few of my favorite things! Browse at your leisure and <a href="mailto:ckliu@mit.edu?Subject=Hello!" target="_top"> hit me up </a> if you are interested in hearing more about my thoughts, recommendations, or musings for any of the below. So without further ado...Enjoy! </p>
+
+
+			<h2 class = "purple"> <b> My Youtube Channel! </b></h2>
+ 			<iframe class = "centered" width="100%" height="450" src="http://www.youtube.com/embed/t-NoBF_SgIA" frameborder="0" allowfullscreen></iframe>
+
+ 			<br><br>
+ 			<h2 class = "purple"> <b> Books that Changed My Life </b></h2>
+ 			<div class="wrapper">
+ 				<div class="row">
+ 					<div class ="box col-md-3">
+						<a href="http://www.creativeconfidence.com/"><img src = "creative_confidence.jpg"></a><br />
+					</div>
+					<div class ="box col-md-3">
+						<a href="http://www.paultough.com/the-books/how-children-succeed/"><img src = "how_children_succeed.jpg"></a><br />
+					</div>
+					<div class ="box col-md-3">
+						<a href="http://leanin.org/"><img src = "lean_in.jpg"></a><br />
+					</div>
+					<div class ="box col-md-3">
+						<a href="http://smile.amazon.com/Picture-Dorian-Gray-Oscar-Wilde/dp/1557427968?sa-no-redirect=1"><img src = "dorian_gray.jpg"></a><br />
+					</div>
+ 				</div>
+ 			</div>
+
+<!--  			<h2 class = "purple"> <b> Random Shenanigans </b></h2>
+ 			<div class="wrapper">
+ 				<div class="row">
+ 					<div class ="box col-md-3">
+						<a href="#"><img src = "#"></a><br />
+					</div>
+					<div class ="box col-md-3">
+						<a href="#"><img src = "#"></a><br />
+					</div>
+					<div class ="box col-md-3">
+						<a href="#"><img src = "#"></a><br />
+					</div>
+					<div class ="box col-md-3">
+						<a href="#"><img src = "#"></a><br />
+					</div>
+ 				</div>
+ 			</div> -->
+
+		</div>
+		<div class="footer">
+				<div class="row">
+					<div class="iconbar">
+						<div class="icon col-md-4">
+							<a href = "https://twitter.com/ckliu95"><img id="social-icon" src = "twitter.jpg"></a>
+						</div>
+						<div class="icon col-md-4">
+							<a href = "https://www.linkedin.com/pub/connie-liu/56/404/b58"><img id="social-icon" src = "linkedin.png" ></a>
+						</div>
+						<div class="icon col-md-4">
+							<a href="mailto:ckliu@mit.edu?Subject=Hello!" target="_top"> <img id="social-icon" src = "gmail.png"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
+<script>
+	$(document).ready(function() {
+		var viewportWidth = $(window).width();
+		$(".project_content").width(viewportWidth/1.73);
+	});
+
+	$(window).resize(function() {
+		var viewportWidth = $(window).width();
+		$(".project_content").width(viewportWidth/1.73);
+	});
+</script>
+

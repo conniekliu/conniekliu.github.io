@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+		<link rel="stylesheet" href="bootstrap.js">
+		<link rel="stylesheet" href="bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div class="container">
+<!-- 			<div style="float:left;"> -->
+			<div class="header-wrapper">
+				<h1 class="name" id="full-name"><b>CONNIE LIU</b></h1>
+			</div>
+			<div class="navbar">
+				<li>
+					<a href="index.html">PROJECTS</a>
+				</li>
+				<li>
+					<a href="personal.html">PERSONAL</a>
+				</li>
+				<li>
+					<a href="resume.html">RESUME</a> </h2>
+				</li>
+			</div>
+		<div class="project_content">
+			<h1 class="center" id="project_content_title_earrings"> <b> LASER CUT EARRINGS </b> </h1>
+			<h2 class="purple" id="project_content_subtext_earrings"> Jewelery for the woodshop nerd </h2>
+			<img class="normal centered" id = "earrings" src = "earrings.jpg" align="middle" style="max-width:65%;">
+			<p id="project_content_text_earrings"> These earrings are a side project of mine that bridged my interests in engineering and art. With some scrap plywood and a laser cutter, I experimented with designing these wooden earrings using Solidworks sketches and CorelDraw. I'm happy to share the patterns if you're interested in laser cutting your own! :) </p>
+		</div>
+
+		<div class="row fadedrow">
+			<div class ="box col-md-2">
+				<a href="project.html"><img class = "faded" src = "eyering_final.jpg"></a><br />
+			</div>
+			<div class ="box col-md-2">
+				<a href="lovehandles_project.html"><img class = "faded" src = "lovehandles_final.jpg"></a><br />
+			</div>
+			<div class ="box col-md-2">
+				<a href="linerobot_project.html"><img class = "faded" src = "Line_Robot 1.jpg"></a><br />
+			</div>
+			<div class ="box col-md-2">
+				<a href="601robot_project.html"><img class = "faded" src = "601robot.jpg"></a><br />
+			</div>
+			<div class ="box col-md-2">
+				<a href="earrings_project.html"><img class = "faded" src = "earrings.png"></a><br />
+			</div>
+			<div class ="box col-md-2">
+				<a href="artbot_project.html"><img class = "faded" src = "artbot1.jpg"></a><br />
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="row">
+				<div class="iconbar">
+					<div class="icon col-md-4">
+						<a href = "https://twitter.com/ckliu95"><img id="social-icon" src = "twitter.jpg"></a>
+					</div>
+					<div class="icon col-md-4">
+						<a href = "https://www.linkedin.com/pub/connie-liu/56/404/b58"><img id="social-icon" src = "linkedin.png"></a>
+					</div>
+					<div class="icon col-md-4">
+						<a href="mailto:ckliu@mit.edu?Subject=Hello!" target="_top"> <img id="social-icon" src = "gmail.png"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</body>
+</html>
+
+<script>
+	$(document).ready(function() {
+		var viewportWidth = $(window).width();
+		$(".project_content").width(viewportWidth/1.73);
+	});
+
+	$(window).resize(function() {
+		var viewportWidth = $(window).width()
+		var newImageDimension = String(viewportWidth/3.24);
+		// var fontSize = String(viewportWidth*0.023)+"px";
+		// var fontSize2 = String(viewportWidth*0.012)+"px";
+		// var fontSize3 = String(viewportWidth*0.015)+"px";
+		$(".project_content").width(viewportWidth/1.73);
+		for (var i=0; i<=2; i++) {	
+			$("#earrings").attr('width', newImageDimension);
+			$("#earrings").attr('height', newImageDimension);
+		}
+		// $("#project_content_title_earrings").css("font-size", fontSize);
+		// $("#project_content_text_earrings").css("font-size", fontSize2);
+		// $("#project_content_subtext_earrings").css("font-size", fontSize3);
+	});
+</script>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+		<link rel="stylesheet" href="bootstrap.js">
+		<link rel="stylesheet" href="bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div class="container">
+<!-- 			<div style="float:left;"> -->
+			<div class="header-wrapper">
+				<h1 class="name" id="full-name"><b>CONNIE LIU</b></h1>
+			</div>
+			<div class="navbar">
+				<li>
+					<a href="index.html">PROJECTS</a>
+				</li>
+				<li>
+					<a href="personal.html">PERSONAL</a>
+				</li>
+				<li>
+					<a href="resume.html">RESUME</a> </h2>
+				</li>
+			</div>
+		<div class="project_content">
+			<h1 id = "project_content_title" class="center"> <b> LINE FOLLOWING ROBOT </b> </h1>
+			<h2 class="purple"> An autonomous robot with attitude </h2>
+			<img class="normal centered" id = "linerobot-1" src = "Line_Robot 1.jpg" align="middle" style="max-width:65%;">
+			<p id = "project_content_text_linerobot1"> Our final project for 2.678, MIT's Electronics for Mechanical Systems class, was to build a line following robot that autonomously navigates a maze. We were given an Arduino, an infrared sensor array, and a robot frame to start. The maze consisted of a 1 inch wide black line extending through the course. However, there were also obstacles such as Figure 8 loops, garbled lines, blank spots, and more. Success was judged by speed, accuracy, and ability to get through the whole track. </p>
+			<p id = "project_content_text_linerobot2"> My partner and I were able to complete the source in 1:37, ranking in the top scoring robots. However, in future iterations of the robot, I would have included a more efficient search algorithm that utilized path prediction rather than the inefficient 180 scan used for this version.</p>
+			<img class="normal centered" id = "linerobot-2" src = "Line_Robot 2.jpg" align="middle" style="max-width:65%;">
+
+			<h2 class = "purple"> <b>Lessons Learned </b> </h2>
+
+			<p> <b> Arduino Programming: </b> In programming the Arduino, I utilized delay functions, interrupt pins, and serial commands. We also tuned thresholds for the sensor values to control for any noise from the sensors and to make the software more robust. Depending on this sensor input, the robot would either continue straight, turn left, turn right, or scan for black to return to the path. The speed was also tuned to complete tight turns quickly and accurately. By adding a slight backwards motion </p>
+
+			<p> <b> Electronics Testing: </b> In order to debug our circuit, we used a multimeter to measure current, voltage, and continuity across different leads. In addition, as a prerequisite to the autonomous robot challenge, we designed test circuits to send smoothed signals using an external power supply and a waveform generator. </p>
+
+		</div>
+
+		<div class="row fadedrow">
+			<div class ="box col-md-2">
+				<a href="project.html"><img class = "faded" src = "eyering_final.jpg"></a><br />
+			</div>
+			<div class ="box col-md-2">
+				<a href="lovehandles_project.html"><img class = "faded" src = "lovehandles_final.jpg"></a><br />
+			</div>
+			<div class ="box col-md-2">
+				<a href="linerobot_project.html"><img class = "faded" src = "Line_Robot 1.jpg"></a><br />
+			</div>
+			<div class ="box col-md-2">
+				<a href="601robot_project.html"><img class = "faded" src = "601robot.jpg"></a><br />
+			</div>
+			<div class ="box col-md-2">
+				<a href="earrings_project.html"><img class = "faded" src = "earrings.png"></a><br />
+			</div>
+			<div class ="box col-md-2">
+				<a href="artbot_project.html"><img class = "faded" src = "artbot1.jpg"></a><br />
+			</div>
+		</div>
+		
+		<div class="footer">
+			<div class="row">
+				<div class="iconbar">
+					<div class="icon col-md-4">
+						<a href = "https://twitter.com/ckliu95"><img id="social-icon" src = "twitter.jpg"></a>
+					</div>
+					<div class="icon col-md-4">
+						<a href = "https://www.linkedin.com/pub/connie-liu/56/404/b58"><img id="social-icon" src = "linkedin.png"></a>
+					</div>
+					<div class="icon col-md-4">
+						<a href="mailto:ckliu@mit.edu?Subject=Hello!" target="_top"> <img id="social-icon" src = "gmail.png"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</body>
+</html>
+
+<script>
+	$(document).ready(function() {
+		var viewportWidth = $(window).width();
+		$(".project_content").width(viewportWidth/1.73);
+	});
+
+	$(window).resize(function() {
+		var viewportWidth = $(window).width()
+		var newImageDimension = String(viewportWidth/3.24);
+		// var fontSize = String(viewportWidth*0.023)+"px";
+		// var fontSize2 = String(viewportWidth*0.012)+"px";
+		// var fontSize3 = String(viewportWidth*0.015)+"px";
+		$(".project_content").width(viewportWidth/1.73);
+		for (var i=0; i<=2; i++) {	
+			$("#linerobot-"+i).attr('width', newImageDimension);
+			$("#linerobot-"+i).attr('height', newImageDimension);
+		}
+		// for (var i=0; i<=2; i++) {	
+		// 	$("#project_content_text_linerobot"+i).css("font-size", fontSize2);
+		// }
+		// $("#project_content_title").css("font-size", fontSize);
+		// $("#project_content_subtext").css("font-size", fontSize3);
+	});
+</script>
