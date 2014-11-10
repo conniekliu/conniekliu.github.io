@@ -183,6 +183,13 @@ img.faded {
 	margin: 0 auto;
 }
  
+.custom-col-md-4 {
+	width: 31.333333%;
+	float: left;
+	margin-right: 2%;
+	margin-left: 2%px;
+}
+
 /*body {
 	background-color: gray !important;
 }
