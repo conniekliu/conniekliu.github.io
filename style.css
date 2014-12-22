@@ -181,11 +181,6 @@ img.faded {
 	text-align: center;
 	padding: 20px;
 }
-
-.resume {
-	text-align: center;
-	margin: 0 auto;
-}
  
 .custom-col-md-4 {
 	width: 31.333333%;
@@ -194,57 +189,9 @@ img.faded {
 	margin-left: 2%px;
 }
 
-/*body {
-	background-color: gray !important;
+.custom-col-md-3 {
+	width: 23%;
+	float: left;
+	margin-right: 2%;
+	margin-left: 2%px;
 }
-
-.row { text-align: center; margin: 0 auto;}
-
-.header-wrapper {
-	text-align: center;
-	margin: 20px auto;
-	width: 25%;
-	padding-bottom: 15px;
-	padding-top: 15px;
-	padding-left: 20px;
-	padding-right: 20px;
-	border-style: solid;
-    border-width: 5px;
-    border-color: white;
-} 
-
-.header-wrapper h1 {
-	margin-top: 0;
-}
-
-.main-wrapper {
-	max-width: 70%;
-	margin: 20px auto;
-}
-
-.footer-wrapper {
-	margin: 20px auto;
-	text-align: center;
-}
-
-.social-icons {
-	max-width: 150px;
-	margin: 0 auto;
-	text-align: center;
-}
-
-#social-icon {
-	border-radius: 50%;
-}
-
-.threeboxes { 
-	text-align: center; 
-	margin: 20px 0;
-}
-
-.header-links {
-	max-width: 250px;
-	text-align: center;
-	margin: 0 auto;
-}
-*/
