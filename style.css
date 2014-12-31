@@ -2,6 +2,10 @@ body {
 	background-image: url("gplaypattern_@2X.png")
 }
 
+h4 {
+	color: black;
+}
+
 h1 {
 	color: #3D007A;
 	font-family: "Montserrat", sans-serif;
