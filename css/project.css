@@ -182,6 +182,7 @@ footer {
 	margin: 0 auto;
 	width: 220px;
 	padding-bottom: 5px;
+	display: hidden;
 }
 
 .main-wrapper {
@@ -274,6 +275,10 @@ img {
 	text-align: center;
 	margin-top: 50px;
 	min-width: 150px;
+}
+
+.osl-fix {
+	min-width: 125px;
 }
 
 .lesson-icon {
@@ -420,6 +425,7 @@ iframe {
 	background-color: #5f9ea0;
 	background: url(../images/menu-icon.png);
 	cursor: pointer;
+	display: hidden;
 }
 
 .dropdown-menu {
@@ -430,6 +436,7 @@ iframe {
 	z-index: 1001;
 	background-color: #5f9ea0;
 	text-align: center;
+	display: hidden;
 }
 
 @media screen and (max-width: 800px) {

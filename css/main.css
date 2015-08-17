@@ -358,6 +358,7 @@ header {
 	background-color: #5f9ea0;
 	background: url(../images/menu-icon.png);
 	cursor: pointer;
+	display: hidden;
 }
 
 .dropdown-menu {
@@ -368,6 +369,7 @@ header {
 	z-index: 1000;
 	background-color: #5f9ea0;
 	text-align: center;
+	display: hidden;
 }
 
 @media screen and (max-width: 800px) {
