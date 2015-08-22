@@ -11,6 +11,7 @@ h1.gray {
 	color: #666666;
 	font-family: "Lato", sans-serif;
 	font-size: 150%;
+	text-align: left;
 }
 
 h2 {
@@ -406,6 +407,82 @@ img {
 
 .margin-edit {
 	margin-top: 0px;
+}
+
+.article-full {
+	width: 60%;
+	margin: 0 auto;
+	margin-top: 45px;
+	border-top-style: dotted;
+	border-bottom-style: dotted;
+	border-width: 1px;
+	border-color: #666666;
+}
+
+.article-pic {
+	width: 100%;
+	height: 150px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.article-overlay {
+	background: rgba(0,0,0,0.2);
+	height: 150px;
+	margin: 0 auto;
+}
+
+.puzzle-article {
+	background-image: url('../images/puzzle-pieces.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.design-article {
+	background-image: url('../images/crayons.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+
+.startyoung-article {
+	background-image: url('../images/start-young.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+.books {
+	width: 60%;
+	margin: 0 auto;
+	margin-top: 25px;
+	display: table;
+}
+
+.inspire {
+	width: 31%;
+	margin: 1%;
+	height: 250px;
+	float: left;
+
+}
+
+.creative-conf {
+	background-image: url('../images/creative-confidence.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.children {
+	background-image: url('../images/how-children-succeed.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.steal-dreams {
+	background-image: url('../images/stop-stealing-dreams.png');
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
 iframe {

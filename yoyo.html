@@ -31,28 +31,31 @@
 
 <header>
 	<div class="navbar">
-		<h3><a href="index.html#assistive-design">assistive design</a> </h3>
+		<h3 class="resize-font"><a href="index.html#assistive-design">assistive design</a> </h3>
 	</div>
 	<div class="navbar">
-		<h3> <a href="index.html#engineering">engineering</a> </h3>
+		<h3 class="resize-font"> <a href="index.html#engineering">engineering</a> </h3>
 	</div>
 	<div class="navbar">
-		<h3> <a href="index.html#leadership">leadership</a> </h3>
+		<h3 class="resize-font"> <a href="index.html#leadership">leadership</a> </h3>
+	</div>
+	<a href="index.html">
+		<div class="navbar potato">
+		
+<!-- 			<img src="images/initials-logo.png" align="middle" style="width:75%; min-width: 50px;">  -->
+		</div>
+	</a>
+	<div class="navbar">
+		<h3 class="resize-font"> <a href="index.html#personal">personal</a> </h3>
 	</div>
 	<div class="navbar">
-		<a href="index.html"> <img src="images/initials-logo.png" align="middle" style="width:75%; min-width: 50px;"> </a>
+		<h3 class="resize-font"> <a href="CKL_Resume2.pdf">resume</a> </h3>
 	</div>
 	<div class="navbar">
-		<h3> <a href="index.html#personal">personal</a> </h3>
-	</div>
-	<div class="navbar">
-		<h3> <a href="CKL_Resume2.pdf">resume</a> </h3>
-	</div>
-	<div class="navbar">
-		<h3> <a href="index.html#contact">contact</a> </h3>
+		<h3 class="resize-font"> <a href="index.html#contact">contact</a> </h3>
 	</div>
 	<div class= "menu-icon">
-		<img src="images/menu-icon.png" width="100%;" height="100%">
+<!-- 		<img src="images/menu-icon.png" width="100%;" height="100%"> -->
 	</div>
 </header>
 
@@ -179,6 +182,8 @@
 		resize("1%","0","3%",".problem");
 		resize("0","5%","5%",".logo");
 		resize("0","0","2%",".lesson");
+		$('.menu-icon').append('<img src="images/menu-icon.png" width="100%;" height="100%">');
+		$('.potato').append('<img src="images/initials-logo.png" align="middle" style="width:75%; min-width: 50px;">');
 	});
 
 

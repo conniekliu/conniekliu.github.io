@@ -39,9 +39,12 @@
 	<div class="navbar">
 		<h3 class="resize-font"> <a href="index.html#leadership">leadership</a> </h3>
 	</div>
-	<div class="navbar">
-		<a href="index.html"> <img src="images/initials-logo.png" align="middle" style="width:75%; min-width: 50px;"> </a>
-	</div>
+	<a href="index.html">
+		<div class="navbar potato">
+		
+<!-- 			<img src="images/initials-logo.png" align="middle" style="width:75%; min-width: 50px;">  -->
+		</div>
+	</a>
 	<div class="navbar">
 		<h3 class="resize-font"> <a href="index.html#personal">personal</a> </h3>
 	</div>
@@ -52,7 +55,7 @@
 		<h3 class="resize-font"> <a href="index.html#contact">contact</a> </h3>
 	</div>
 	<div class= "menu-icon">
-		<img src="images/menu-icon.png" width="100%;" height="100%">
+<!-- 		<img src="images/menu-icon.png" width="100%;" height="100%"> -->
 	</div>
 </header>
 
@@ -122,13 +125,46 @@
 
 		</div>
 
-<!-- 		<div class="section-bar">
+		<div class="section-bar">
 			<h2 class="larger"><b> Additional Thoughts</b> </h2>
 		</div>
 
 		<div class="deets">
-			<h3 class="norm"> I also do a lot of education thinking and reading Check out the links below for some of my writing on education and to books and videos that have inspired me.</h3>
-		</div> -->
+			<h3 class="norm"> I also do a lot of education thinking and reading. Check out the links below for some of my writing on education and to books and videos that have inspired me.</h3>
+
+			<a href="https://medium.com/@ckliu95/pattern-recognition-599f4aed37be"> <div class="article-full">
+				<div class="article-pic puzzle-article">
+					<div class="article-overlay">
+					</div>
+				</div>
+				<h1 class="gray"> <b> Pattern Recognition </b> </h1>
+				<h3 class="norm"> Using scientific methods to empower non-scientific thinking </h3>
+			</div></a>
+
+			<a href="https://medium.com/education-posts/the-value-of-starting-young-d22f72150bf8"> <div class="article-full">
+				<div class="article-pic startyoung-article">
+					<div class="article-overlay">
+					</div>
+				</div>
+				<h1 class="gray"> <b> The Value of Starting Young </b> </h1>
+				<h3 class="norm"> The importance of pursuing passion projects </h3>
+			</div></a>
+
+			
+			<div class="books">
+				<h1 class="gray"> Inspiring Books </h1>
+				<a href="http://www.creativeconfidence.com/"><div class="inspire creative-conf">
+				</div></a>
+
+				<a href="http://smile.amazon.com/How-Children-Succeed-Curiosity-Character/dp/0544104404?sa-no-redirect=1"><div class="inspire children">
+				</div></a>
+
+				<a href="http://sethgodin.typepad.com/files/stopstealingdreams-2015.pdf"><div class="inspire steal-dreams">
+				</div></a>
+			</div>
+
+
+		</div>
 
 
 		<footer>
@@ -203,6 +239,8 @@
 		resize("1%","3%","3%",".problem");
 		resize("0","5%","5%",".logo");
 		resize("0","0","2%",".lesson");
+		$('.menu-icon').append('<img src="images/menu-icon.png" width="100%;" height="100%">');
+		$('.potato').append('<img src="images/initials-logo.png" align="middle" style="width:75%; min-width: 50px;">');
 	});
 
 
