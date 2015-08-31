@@ -50,7 +50,7 @@ function resizesocial(resizeLimit) {
 
 
 function toppage() {
-	var header_size = $('header').offset().top + $('header').outerHeight();
+	var header_size = $('header').offset().top + ($('header').outerHeight()*1.5);
 	$('.main-wrapper').css({'padding-top': header_size});
 }
 
