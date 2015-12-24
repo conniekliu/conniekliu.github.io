@@ -212,7 +212,8 @@ header {
 	width: 31.33%;
 	margin: 1%;
 	float: left;
-	background-size: 100% 100%;
+	background-size: auto 100%;
+	background-position: center;
 	height: 300px;
 	min-width: 300px;
 	position: relative;
@@ -226,7 +227,7 @@ header {
 .project-3:hover {
 	 cursor: pointer;
 	 opacity: 0.7;
-	 background-size: 110% 110%;
+	 background-size: auto 110%;
 }
 
 .project-fingerreader {
@@ -255,8 +256,8 @@ header {
 	/*background-size: cover;*/
 }
 
-.project-rest {
-	background-image: url('../images/rest-robot.jpg');
+.project-vantage {
+	background-image: url('../images/2009-vantage-product.jpg');
 	/*background-size: cover;*/
 }
 
@@ -267,6 +268,10 @@ header {
 .project-swe {
 	background-image: url('../images/swe-cpl.jpg');
 	/*background-size: cover;*/
+}
+
+.project-research {
+	background-image: url('../images/MP2-poster.png');
 }
 
 .big-project {

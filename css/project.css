@@ -24,6 +24,13 @@ h2.larger {
 	font-size: 200%;
 }
 
+h2.project-title {
+	color: #666666;
+	font-family: "Lato", sans-serif;
+	font-size: 150%;
+	text-align: center;
+}
+
 h3 {
 	font-family: "Lato", sans-serif;
 	font-size: 140%;
@@ -50,6 +57,10 @@ h3.light {
 h3.center {
 	text-align:center;
 	color: #FFFFFF;
+}
+
+h3.middle {
+	text-align:center;
 }
 
 h3.footer {
@@ -235,6 +246,20 @@ img {
 	margin-bottom: 0px;
 }
 
+.project-pic {
+	margin: 0 auto;
+	height: 300px;
+	min-width: 250px;
+}
+
+.hierarchy {
+	background-image: url('../images/MP2-Hierarchy-indep.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
 .lessons {
 	margin-top: 0px;
 }
@@ -326,31 +351,43 @@ img {
 .fingerreader {
 	background-image: url('../images/fi-logo.jpeg');
 	background-size: contain;
-	background-repeat: no-repeat;	
+	background-repeat: no-repeat;
+	background-position: center;	
 }
 
 .osl {
 	background-image: url('../images/duet-logo.png');
 	background-size: contain;
-	background-repeat: no-repeat;	
+	background-repeat: no-repeat;
+	background-position: center;	
 }
 
 .penpal {
 	background-image: url('../images/penpal-logo-white.png');
 	background-size: contain;
 	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .dfa {
-	background-image: url('../images/dfa-logo.png');
+	background-image: url('../images/dfa-logo-transp.png');
 	background-size: contain;
 	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .edu {
 	background-image: url('../images/grad-cap.png');
 	background-size: contain;
 	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.hgse {
+	background-image: url('../images/harvard-logo.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 
