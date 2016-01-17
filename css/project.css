@@ -390,6 +390,13 @@ img {
 	background-position: center;
 }
 
+.speakerdeck {
+	width: 50%;
+	max-width: 650px;
+	height: 100%;
+	padding-top: 60px;
+}
+
 
 .deets {
 	margin: 0 auto;
