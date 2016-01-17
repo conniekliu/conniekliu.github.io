@@ -477,6 +477,13 @@ img {
 	margin: 0 auto;
 }
 
+.eng-article {
+	background-image: url('../images/yoyo-mold-machining.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
 .puzzle-article {
 	background-image: url('../images/puzzle-pieces.jpg');
 	background-size: cover;
@@ -525,8 +532,8 @@ img {
 	background-repeat: no-repeat;
 }
 
-.steal-dreams {
-	background-image: url('../images/stop-stealing-dreams.png');
+.one-world {
+	background-image: url('../images/one-world.jpeg');
 	background-size: contain;
 	background-repeat: no-repeat;
 }
