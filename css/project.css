@@ -391,9 +391,8 @@ img {
 }
 
 .speakerdeck {
+	margin: 0 auto;
 	width: 50%;
-	max-width: 650px;
-	height: 100%;
 	padding-top: 60px;
 }
 
