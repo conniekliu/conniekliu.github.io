@@ -575,10 +575,6 @@ iframe {
 	display: hidden;
 }
 
-.hi {
-	
-}
-
 @media screen and (max-width: 800px) {
 	h3.norm {
 		font-size: 100%;
