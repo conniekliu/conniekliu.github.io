@@ -242,7 +242,7 @@ header {
 }
 
 .project-penpal {
-	background-image: url('../images/penpal.jpg');
+	background-image: url('../images/penpal-layout2.jpg');
 	/*background-size: cover;*/
 }
 
@@ -262,7 +262,7 @@ header {
 }
 
 .project-dfa {
-	background-image: url('../images/dfa-booth-2.jpg');
+	background-image: url('../images/dfa-group.jpg');
 	/*background-size: cover;*/
 }
 .project-swe {
@@ -270,8 +270,20 @@ header {
 	/*background-size: cover;*/
 }
 
+.project-sensei {
+	background-image: url('../images/sensor-lesson.jpeg');
+}
+
+.project-table {
+	background-image: url('../images/join-table.png');
+}
+
 .project-research {
 	background-image: url('../images/MP2-poster.png');
+}
+
+.project-writing {
+	background-image: url('../images/penpal-layout.jpg');
 }
 
 .big-project {

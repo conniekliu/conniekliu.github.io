@@ -14,6 +14,10 @@ h1.gray {
 	text-align: left;
 }
 
+h1.center {
+	text-align: center;
+}
+
 h2 {
 	font-family: "Oxygen", sans-serif;
 	color: #FFFFFF;
@@ -66,6 +70,7 @@ h3.middle {
 h3.footer {
 	font-weight: normal;
 	color: #B0B0B0;
+	margin: 15px;
 }
 
 
@@ -149,7 +154,7 @@ header {
 footer {
 	background-color: #666666;
 	margin: 0 auto;
-	margin-top: 30px;
+	margin-top: 60px;
 	width: 100%;
 	position: relative;
 	display: table;
@@ -158,9 +163,10 @@ footer {
 
 .footer-sections {
 	float: left;
-	width: 60%;
+	width: 75%;
 	padding-left: 5%;
 	padding-bottom: 10px;
+	display: table;
 
 }
 
@@ -168,15 +174,23 @@ footer {
 	text-align: center;
 	float: left;
 	width: 33%;
+	display: table-cell;
+}
 
+.footer-duo {
+	display: table;
+	width: 100%;
+	margin-top: -15px;
+}
+
+.footer-edu {
+	display: table-cell;
 }
 
 .footer-social {
 	float: right;
 	width: 150px;
-	position:absolute;
-	bottom: 21%;
-	right: 5%;
+	margin-right: 5%;
 }
 
 .social-icon {
@@ -390,12 +404,109 @@ img {
 	background-position: center;
 }
 
+.sensei {
+	background-image: url('../images/sensei-logo.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.join {
+	background-image: url('../images/join-favicon.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
 .speakerdeck {
 	margin: 0 auto;
 	width: 50%;
 	padding-top: 60px;
 }
 
+.texts {
+	width: 80%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.logos {
+	width: 125px;
+	height: 100px;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 15px;
+}
+
+.swes {
+	background-image: url('../images/new-swe-logo.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.tfa {
+	background-image: url('../images/tfa-logo.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.ceti {
+	background-image: url('../images/ceti-logo.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.citizen {
+	background-image: url('../images/citizen-schools-logo.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.dfa2 {
+	background-image: url('../images/dfa-logo.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.inventeams {
+	background-image: url('../images/inventeams-logo.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.sutd {
+	background-image: url('../images/sutd-logo.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.ati {
+	background-image: url('../images/ati-logo.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.scioly {
+	background-image: url('../images/scioly-logo.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.debate {
+	background-image: url('../images/debate-logo.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
 
 .deets {
 	margin: 0 auto;
@@ -490,6 +601,13 @@ img {
 	background-repeat: no-repeat;
 }
 
+.marsh-article {
+	background-image: url('../images/marshmallow.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
 .puzzle-article {
 	background-image: url('../images/puzzle-pieces.jpg');
 	background-size: cover;
@@ -511,15 +629,16 @@ img {
 }
 
 .books {
-	width: 60%;
+	width: 75%;
 	margin: 0 auto;
 	margin-top: 25px;
 	margin-bottom: 60px;
 	display: table;
+	text-align: center;
 }
 
 .inspire {
-	width: 31%;
+	width: 23%;
 	margin: 1%;
 	height: 250px;
 	float: left;
@@ -540,6 +659,12 @@ img {
 
 .one-world {
 	background-image: url('../images/one-world.jpeg');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.succeed {
+	background-image: url('../images/succeed-book.jpg');
 	background-size: contain;
 	background-repeat: no-repeat;
 }
