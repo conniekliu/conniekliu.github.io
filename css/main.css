@@ -243,45 +243,6 @@ header {
 	display: hidden;
 }
 
-.rsz_timeline {
-	width: 46%;
-	margin: 2%;
-	float: left;
-	position: relative;
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	height: 400px;
-    min-width: 400px;
-}
-
-.rsz_work {
-	width: 46%;
-	margin: 2%;
-	float: left;
-	position: relative;
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	height: 400px;
-    min-width: 400px;
-}
-
-.rsz_highlight {
-	width: 46%;
-	margin: 2%;
-	float: left;
-	position: relative;
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	height: 400px;
-    min-width: 400px;
-}
-
-.rsz_partner {
-	height: 80px;
-	padding: 0.5em;
-	display: inline-block;
-}
-
 .potato {
 
 }
