@@ -1,249 +1,160 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
-	
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
-	<script src="js/project-responsive.js" type="text/javascript"></script>
 
+	<!--css linking-->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-
 	<link rel='shortcut icon' href='favicon.png' type='image/png'/ >
+
+	<!--fonts-->
+	<link href='http://fonts.googleapis.com/css?family=Avenir' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Gelasio" rel="stylesheet" type='text/css'>
+
+	<!--responsiveness javascript-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+	<script src="js/responsive.js" type="text/javascript"></script>
+
+	<!--google analytics-->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-70751123-1"></script>
 	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
 
-	  ga('create', 'UA-70751123-1', 'auto');
-	  ga('send', 'pageview');
-
+	  gtag('config', 'UA-70751123-1');
 	</script>
+
 </head>
 
+
 <div class="dropdown-menu">
-	<h3> <a href="index.html"> home </a> </h3> 
-	<h3><a href="index.html#education"> education </a></h3>
-	<h3> <a href="index.html#assistive-design">assistive design </a></h3>
-	<h3> <a href="index.html#engineering">engineering </a></h3>
-	<h3><a href="index.html#personal"> personal </a></h3>
-	<h3><a href="CKL_Resume2.pdf"> resume </a> </h3>
-	<h3><a href="index.html#contact"> contact </a></h3>
+	<h3> <a href="index.html">home</a> </h3> 
+	<h3> <a href="bio.html">bio</a> </h3> 
+	<h3> <a href="projectinvent.html">project invent</a></h3>
+	<h3> <a href="work.html">work with me</a></h3>
+	<h3> <a href="CKL_Resume2.pdf">resume</a></h3>
 </div>
+
 
 <header>
 	<div class="navbar">
-		<h3> <a href="#education">education</a> </h3>
+		<h3> <a href="bio.html">BIO</a> </h3>
 	</div>
+
 	<div class="navbar">
-		<h3><a href="#assistive-design">assistive design</a> </h3>
+		<h3> <a href="https://www.projectinvent.org">PROJECT INVENT</a> </h3>
 	</div>
+
 	<div class="navbar">
-		<h3> <a href="#engineering">engineering</a> </h3>
+		<a href="index.html">
+			<div> <img src="images/favicon.png" style="width:40%"></div>
+		</a>
 	</div>
-	<a href="index.html">
-		<div class="navbar potato">
-		
-<!-- 			<img src="images/initials-logo.png" align="middle" style="width:75%; min-width: 50px;">  -->
-		</div>
-	</a>
+	<!-- double check how to link favicon/icon image-->
+
 	<div class="navbar">
-		<h3> <a href="#personal">personal</a> </h3>
+		<h3> <a href="work.html">WORK WITH ME</a> </h3>
 	</div>
+
 	<div class="navbar">
-		<h3> <a href="CKL_Resume2.pdf">resume</a> </h3>
+		<h3> <a href="CKL_Resume2.pdf">RESUME</a> </h3>
 	</div>
-	<div class="navbar">
-		<h3> <a href="#contact">contact</a> </h3>
-	</div>
-	<div class= "menu-icon">
-		<!-- <img src="images/menu-icon.png" width="100%;" height="100%"> -->
-	</div>
+	<div class="menu-icon"> </div>
 </header>
 
+
 <body>
-	<div class="main-wrapper">
-		<div id="front-pic">
-			<img src="images/Lisbon-65.jpg" align="middle" style="width:100%;">
-		</div>
-		<div id="hello">
-			<div class="overlay">
-				<div id="personal-pic">
-					<img src="images/self-circle.gif" align="middle" style="width:20%; min-width: 100px;">
-				</div>
-				<div class="content">
-					<h2 class="thin resize-font"> I'm <b>Connie</b>, a mechanical engineer from MIT turned high school teacher. I'm interested in <b>redesigning education</b> and <b>youth civic engagement</b>. I was formerly a teacher at the <b> <a href="http://www.nuevaschool.org/"> Nueva School </a> </b> and am now building <b> <a href="https://www.projectinvent.org/">Project Invent</a> </b>. </h2>
-				</div>
-			</div>
+	<div class="banner_wrapper">
+		<div class="banner_pic">
+			<img src="images/connieawe.png" style="width:90%">
 		</div>
 
-		<div class = "project-block" id = "education">
-			<div class="section-bar">
-				<h1 class="section resize-font"> <a class="white"> Education </a> </h1>
-			</div>
-			<a href = "dfa.html"> <div class="project-3 project-dfa">
-				<div class="project-name">
-					<h3 class="name"> Design for America </h3>
-					<p class="white"> empowering students to design for social impact </p>
-				</div>
-			</div> </a>
-			<a href="outreach.html"><div class="project-3 project-swe">
-				<div class="project-name">
-					<h3 class="name">Outreach</h3>
-					<p class="white"> providing better education across the nation </p>
-				</div>
-			</div></a>
-			<a href="sensei.html"><div class="project-3 project-sensei">
-				<div class="project-name">
-					<h3 class="name">Sensei</h3>
-					<p class="white"> sensing technologies for the Montessori classroom </p>
-				</div>
-			</div></a>
-			<a href = "table.html"> <div class="project-3 project-table">
-				<div class="project-name">
-					<h3 class="name"> Join the Table </h3>
-					<p class="white"> online platform for Harkness learning </p>
-				</div>
-			</div> </a>
-			<a href="research.html"><div class="project-3 project-research">
-				<div class="project-name">
-					<h3 class="name">Research</h3>
-					<p class="white"> testing methods to redesign education </p>
-				</div>
-			</div></a>
-			<a href="writing.html"><div class="project-3 project-writing">
-				<div class="project-name">
-					<h3 class="name">Writings</h3>
-					<p class="white"> my education thoughts and theories </p>
-				</div>
-			</div></a>
+		<div id="banner_text">
+			<h2> I'm <b>Connie</b>, an entrepreneur designing the future of education. </h2>
+			<p> I'm an MIT mechanical engineer turned high school teacher turned entrepreneur. I'm passionate about designing learning experiences that empower youth. I am currently building Project Invent and will be attending Stanford Business School in 2020. </p>
+		</div>
+	</div>
+
+	<div class="timeline_wrapper">
+		<div class="timeline_block">
+			<img src="images/2009play.jpg" style="width:80%">
 		</div>
 
-		<div class = "project-block" id="assistive-design">
-			<div class = "section-bar">
-				<h1 class="section resize-font"> <a class="white" id="assistive-design"> Assistive Design </a> </h1>
-			</div>
-			<a href="fingerreader.html"><div class="project-3 project-fingerreader">
-				<div class="project-name">
-					<h3 class="name"> FingerReader </h3>
-					<p class="white"> a text reading device for the blind </p>
-				</div>
-			</div></a>
-			<a href="penpal.html"><div class="project-3 project-penpal">
-				<div class="project-name">
-					<h3 class="name"> PenPal </h3>
-					<p class="white"> a smart tremor-canceling pen </p>
-				</div>
-			</div></a>
-			<a href="osl.html"><div class="project-3 project-zipper">
-				<div class="project-name">
-					<h3 class="name"> Duet </h3>
-					<p class="white"> accessible clothing for muscular dystrophy </p>
-				</div>
-			</div></a>
+		<div class="timeline_block">
+			<h2> engineer </h2>
+			<p> From a young age, I loved building things. I started with building mousetrap vehicles. Soon, I was building electric go-karts and specializing in building assistive technologies like <a href="https://techcrunch.com/2014/04/17/mits-fingerreader-helps-the-blind-read-with-a-swipe-of-a-digit/">FingerReader</a> and <a href="http://www.penpallabs.com/">Penpal</a>. </p>
+		</div>
+	</div>
 
+	<div class="timeline_wrapper">
+		<div class="timeline_block">
+			<img src="images/students.jpg" style="width:80%">
 		</div>
 
-		<div class = "project-block" id = "engineering">
-			<div class="section-bar">
-				<h1 class="section resize-font"> <a class="white"> Engineering </a> </h1>
-			</div>
-			<a href="lovehandles.html"><div class="project-3 project-lovehandles">
-				<div class="project-name">
-					<h3 class="name"> Lovehandles </h3>
-					<p class="white"> an electric go kart with a dash of love </p>
-				</div>
-			</div></a>
-			<a href="yoyo.html"><div class="project-3 project-yoyo">
-				<div class="project-name">
-					<h3 class="name"> Yoyos </h3>
-					<p class="white"> design & manufacturing at scale </p>
-				</div>
-			</div></a>
-			<a href="vantage.html"><div class="project-3 project-vantage">
-				<div class="project-name">
-					<h3 class="name"> Vantage </h3>
-					<p class="white"> rediscover your world from a new perspective</p>
-				</div>
-			</div></a>
+		<div class="timeline_block">
+			<h2> teacher </h2>
+			<p> By engineering impactful products, I felt empowered in an unfamiliar way. Why can't all education be this empowering? I became passionate about changing how and what we teach in classrooms. In 2016, I became a teacher at the Nueva School. </p>
+		</div>
+	</div>
+
+	<div class="timeline_wrapper">
+		<div class="timeline_block">
+			<img src="images/projectinventsmile.jpg" style="width:80%">
 		</div>
 
-
-		<div class = "project-block" id="personal">
-			<div class = "section-bar">
-				<h1 class="section resize-font"> <a class="white" id="personal"> Personal </a></h1>
-			</div>
-			<div class="content">
-				<h2 class="thin dark resize-font"> <b>I'm passionate about empowering people to reach their full potential. </b> </h2>
-
-				<h3 class="norm"> Following dreams is a privilege, and I want to use my privilege to the fullest. Because of this, I live by a few guiding principles. <b>Never settle.</b> Always have something bigger and better to work towards, some new idea for how to contribute meaningfully to the world. Only work on things that energize you. <b>Don't take life too seriously.</b> There's too much living and laughing to do. Save your energy for what matters and invest it into accomplishing amazing things. <b>Be the person who inspires you.</b> Don't dream of being your role models: be your own role model. Let inspirations drive you to become better. <b>Work on what you love. </b> If you're not working on what you love, then you're cutting yourself short. You're spending over 30% of your day doing what you don't enjoy, and that's not worth it. Your work should be your life's work. <b>Surround yourself with awesome. </b> That means awesome everything. Awesome things, awesome hobbies, an awesome job, and most importantly, awesome people. Get rid of the things that don't make you happy and spend your time with things that do. They say you're the average of the 5 people you spend the most time with, and I believe that about everything else too. Surround yourself with things that help you grow. Surround yourself with things that make you awesome.
-				</h3> 
-
-			</div>
+		<div class="timeline_block">
+			<h2> entrepreneur </h2>
+			<p> In 2018, I spun out a class of mine into Project Invent, a national nonprofit democratizing innovation in education. Today, we're empowering students to invent solutions to real problems in their communities and become the leaders and changemakers we need. </p>
 		</div>
+	</div>
 
-		<div class = "project-block" id="contact">
-			<div class="section-bar" id="contact">
-				<h1 class="section resize-font"> <a class="white" id="contact"> Contact </a></h1>
+	<div class="contact_wrapper">
+		<h2> find out more </h2>
+		<div class="social_bar">
+			<div class="social_icon">
+				<a href="mailto:conniekliu95@gmail.com?Subject=Hello!" target="_top"><img class="social_icon" src="images/logos/email.png"></a>
 			</div>
-			<div class="content">
-				<h2 class="thin dark resize-font"> <b>Want to get in touch?</b> I'm always looking to connect with more interesting people (that's you!). Email me or check out my medium or twitter to read more of my thoughts on education, people, and the world. </h2>
+			<div class="social_icon">
+				<a href = "https://www.linkedin.com/pub/connie-liu/56/404/b58"><img class="social_icon" src="images/logos/linkedin.png"></a>
 			</div>
-			<div class="social-bar">
-				<div class="social-icon">
-					<a href="https://twitter.com/ckliu95"><img class="social-icon" src="images/twitter.png"></a>
-				</div>
-				<div class="social-icon">
-					<a href="mailto:conniekliu95@gmail.com?Subject=Hello!" target="_top"><img class="social-icon" src="images/email.png"></a>
-				</div>
-				<div class="social-icon">
-					<a href = "https://www.linkedin.com/pub/connie-liu/56/404/b58"><img class="social-icon" src="images/linkedin.png"></a>
-				</div>
-				<div class="social-icon">
-					<a href = "https://medium.com/@ckliu95"><img class="social-icon" src="images/medium.svg"></a>
-				</div>
+			<div class="social_icon">
+				<a href="https://twitter.com/ckliu95"><img class="social_icon" src="images/logos/twitter.png"></a>
+			</div>
+			<div class="social_icon">
+				<a href = "https://medium.com/@ckliu95"><img class="social_icon" src="images/logos/medium.svg"></a>
 			</div>
 		</div>
 	</div>
+
 </body>
+
+
 <script>
-$(document).ready(function() {
-	menubutton();
-	resizeimage("1%","2% auto",'.project-3');
-	resizeimage("2%","2% auto",'.big-project');
-	$('.menu-icon').append('<img src="images/menu-icon.png" width="100%;" height="100%">');
-	$('.potato').append('<img src="images/initials-logo.png" align="middle" style="width:75%; min-width: 50px;">');
-});
+
+	$(document).ready(function() {
+		menubutton();
+		resize(".timeline_block");
+		resize(".banner_pic");
+		//I want to remove display: table cell from .timeline_block
+		//also need to figure out how to change banner image + text
+		//also maybe social
+		$('.menu-icon').append('<img src="images/menu-icon.png" width="100%;" height="100%">');
+		$('.potato').append('<img src="images/favicon.png" align="middle" style="width:75%; min-width: 50px;">');
+	});
 
 
-$(window).resize(function() {
-	menubutton();
-	resizeimage("1%","2% auto",'.project-3');
-	resizeimage("2%","2% auto",'.big-project');
-});
+    $( window ).resize(function() {
+    	menubutton();
+    	toppage();
+    	resize(".timeline_block", "250px");
+    	resize(".banner_pic", "400px");
+    	//also put final resize functions here
+	});
 
 
-$('.menu-icon').click(function()  {
-	$('.dropdown-menu').fadeToggle();
-});
-
-
-$('a[href*=#]:not([href=#])').click(function() {
-	if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-	  var target = $(this.hash);
-	  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-	  if (target.length) {
-	    $('html,body').animate({
-	      scrollTop: target.offset().top
-	    }, 750);
-	    return false;
-	  }
-	}
-});
+	$('.menu-icon').click(function()  {
+		$('.dropdown-menu').fadeToggle();
+	});
 
 </script>
 

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!--css linking-->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel='shortcut icon' href='favicon.png' type='image/png'/ >
+
+	<!--fonts-->
+	<link href='http://fonts.googleapis.com/css?family=Avenir' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Gelasio" rel="stylesheet" type='text/css'>
+
+	<!--responsiveness javascript-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+	<script src="js/responsive.js" type="text/javascript"></script>
+
+	<!--google analytics-->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-70751123-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-70751123-1');
+	</script>
+
+</head>
+
+<div class="dropdown-menu">
+	<h3> <a href="index.html">home</a> </h3> 
+	<h3> <a href="bio.html">bio</a> </h3> 
+	<h3> <a href="projectinvent.html">project invent</a></h3>
+	<h3> <a href="work.html">work with me</a></h3>
+	<h3> <a href="CKL_Resume2.pdf">resume</a></h3>
+</div>
+
+<header>
+	<div class="navbar">
+		<h3> <a href="bio.html">BIO</a> </h3>
+	</div>
+
+	<div class="navbar">
+		<h3> <a href="https://www.projectinvent.org">PROJECT INVENT</a> </h3>
+	</div>
+
+	<div class="navbar">
+		<a href="index.html">
+			<div> <img src="images/favicon.png" style="width:40%"></div>
+		</a>
+	</div>
+	<!-- double check how to link favicon/icon image-->
+
+	<div class="navbar">
+		<h3> <a href="work.html">WORK WITH ME</a> </h3>
+	</div>
+
+	<div class="navbar">
+		<h3> <a href="CKL_Resume2.pdf">RESUME</a> </h3>
+	</div>
+	<div class="menu-icon"> </div>
+</header>
+
+
+<body>
+	<h1> BIO </h1>
+	<div class="highlight_wrapper">
+		<div class="highlight_pic">
+			<img src="images/demodayhappy.jpg" align="middle" style="width:70%">
+		</div>
+
+		<div class="highlight_text">
+			<p> As an MIT graduate, passionate educator, and dedicated entrepreneur, Connie has been both an inventor and invention educator. Her passion for empowering youth comes from her own experiences as a mechanical engineer and assistive technology designer. She worked in the MIT Media Lab on projects like FingerReader, a camera mounted on a ring to help blind people read on-the-go, and PenPal, a tremor-canceling pen for people with Parkinson’s. She now runs Project Invent to empower high school students everywhere to invent technologies that make a difference. </p>
+
+			<h3> featured on </h3>
+		
+		<div class="featured_block">
+
+			<div class="featured_icon">
+				<a href="https://www.forbes.com/30-under-30/2020/education/#391c2c9ce6eb"><img class="featured_icon" src="images/forbes30.png"></a>
+			</div>
+
+			<div class="featured_icon">
+				<a href="https://www.businessinsider.com/most-impressive-students-at-mit-2014-11#connie-liu-designed-a-camera-ring-that-reads-text-to-the-blind-5"><img class="featured_icon" src="images/bizinside.jpg"></a>
+			</div>
+
+			<div class="featured_icon">
+				<a href="https://www.technologyreview.com/s/612791/future-focused-education-through-invention/"><img class="featured_icon" src="images/mitalum.jpeg"></a>
+			</div>
+
+		</div>
+		</div>
+
+
+	</div>
+</body>
+
+
+<script>
+
+	$(document).ready(function() {
+		menubutton();
+		resize(".highlight_pic");
+		$('.menu-icon').append('<img src="images/menu-icon.png" width="100%;" height="100%">');
+		$('.potato').append('<img src="images/favicon.png" align="middle" style="width:75%; min-width: 50px;">');
+	});
+
+
+    $( window ).resize(function() {
+    	menubutton();
+    	resize(".highlight_pic", "350px");
+	});
+
+
+	$('.menu-icon').click(function()  {
+		$('.dropdown-menu').fadeToggle();
+	});
+
+</script>
+
+</html>
