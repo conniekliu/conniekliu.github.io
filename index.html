@@ -88,7 +88,7 @@
 			<p> From a young age, I loved building things. I started with building mousetrap vehicles. Soon, I was building electric go-karts and specializing in building assistive technologies like <a href="https://techcrunch.com/2014/04/17/mits-fingerreader-helps-the-blind-read-with-a-swipe-of-a-digit/">FingerReader</a> and <a href="http://www.penpallabs.com/">Penpal</a>. </p>
 		</div>
 
-		<div class="pixel_char" id="pixel_char">
+		<div class="pixel_char" id="pixel_char" style="display: none">
 			<img src="images/pixel-me.png" id="pixel_char_img" />
 		</div>
 	</div>
@@ -164,6 +164,7 @@
 		engineer_position.left = engineer_position.left - $('#pixel_char').width() / 1.8;
 		engineer_position.top = engineer_position.top + $('#timeline_engineer').height() / 3;
 		$('#pixel_char').css(engineer_position);
+		$('#pixel_char').show();
 		$(window).trigger('resize');
 	}, 1000);
 
