@@ -32,8 +32,8 @@
 
 
 <div class="dropdown-menu">
-	<h3> <a href="index.html">home</a> </h3> 
-	<h3> <a href="bio.html">bio</a> </h3> 
+	<h3> <a href="index.html">home</a> </h3>
+	<h3> <a href="bio.html">bio</a> </h3>
 	<h3> <a href="https://www.projectinvent.org">project invent</a></h3>
 	<h3> <a href="work.html">work with me</a></h3>
 	<h3> <a href="CKL_Resume2.pdf">resume</a></h3>
@@ -80,12 +80,16 @@
 
 	<div class="timeline_wrapper">
 		<div class="timeline_block">
-			<img src="images/2009play.png" style="width:80%">
+			<img src="images/2009play.png" style="width:80%" id="timeline_engineer">
 		</div>
 
 		<div class="timeline_block">
 			<h2> engineer </h2>
 			<p> From a young age, I loved building things. I started with building mousetrap vehicles. Soon, I was building electric go-karts and specializing in building assistive technologies like <a href="https://techcrunch.com/2014/04/17/mits-fingerreader-helps-the-blind-read-with-a-swipe-of-a-digit/">FingerReader</a> and <a href="http://www.penpallabs.com/">Penpal</a>. </p>
+		</div>
+
+		<div class="pixel_char" id="pixel_char">
+			<img src="images/pixel-me.png" id="pixel_char_img" />
 		</div>
 	</div>
 
@@ -140,6 +144,10 @@
 		resize(".banner_pic");
 		$('.menu-icon').append('<img src="images/menu-icon.png" width="100%;" height="100%">');
 		$('.potato').append('<img src="images/favicon.png" align="middle" style="width:75%; min-width: 50px;">');
+		var engineer_position = $('#timeline_engineer').offset();
+		engineer_position.left = engineer_position.left - $('#pixel_char').width() / 1.8;
+		engineer_position.top = engineer_position.top + $('#timeline_engineer').height() / 3;
+		$('#pixel_char').css(engineer_position);
 	});
 
 
@@ -148,11 +156,19 @@
     	toppage();
     	resize(".timeline_block", "250px");
     	resize(".banner_pic", "400px");
+    	var engineer_position = $('#timeline_engineer').offset();
+    	engineer_position.left = engineer_position.left - $('#pixel_char').width() / 1.8;
+    	engineer_position.top = engineer_position.top + $('#timeline_engineer').height() / 3;
+		$('#pixel_char').css(engineer_position);
 	});
 
 
 	$('.menu-icon').click(function()  {
 		$('.dropdown-menu').fadeToggle();
+	});
+
+	$("#pixel_char").click(function(){
+		window.open('http://www.superconnie64.com');
 	});
 
 </script>
