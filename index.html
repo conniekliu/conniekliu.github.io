@@ -163,6 +163,7 @@
 	engineer_position.left = engineer_position.left - $('#pixel_char').width() / 1.8;
 	engineer_position.top = engineer_position.top + $('#timeline_engineer').height() / 3;
 	$('#pixel_char').css(engineer_position);
+	$(window).trigger('resize');
 
 	$('.menu-icon').click(function()  {
 		$('.dropdown-menu').fadeToggle();
