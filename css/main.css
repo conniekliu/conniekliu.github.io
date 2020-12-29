@@ -243,15 +243,10 @@ header {
 	display: hidden;
 }
 
-.pixel_char {
-	position: absolute;
-}
-
 .pixel_char:hover {
 	cursor: pointer
 }
 
 #pixel_char_img {
-	width: 50px;
-	transform: rotate(270deg);
+	height: 50px;
 }
