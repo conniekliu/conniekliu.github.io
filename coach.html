@@ -82,17 +82,17 @@
 
 	<div class="coach_wrapper">
 
-		<div class="coach_img"> <img src="images/kruti.png" style="width:80%"> </div>
+		<div class="coach_pic"> <img src="images/kruti.png" style="width:80%"> </div>
 
 		<div class="coach_testimonial">
 
 		<h2> “Connie is exactly the person I needed to meet and work with as I closed one chapter and started another.” </h2>
 
 		<p> <i> Over the course of just a few weeks, Connie helped bring much-needed clarity, process, and even confidence into my life. She is an incredible listener and made me feel so understood throughout our time working together, which made it easy to be completely honest and vulnerable with my thoughts—a true gift that allowed me to reveal things to myself about me that I had not previously considered. I can say, without a doubt, that working with Connie was the best investment in myself I could have made as I prepared for a big shift in my professional life. </i>(Kruti Mehta) </p>
-	</div>
+		</div>
 	</div>
 
-	<div class="coach_wrapper">
+
 		<div class="coach_text">
 			<h2> Why Coaching? </h2>
 			<p>As a first-time founder at age 23, I had a lot to learn. One of the most valuable things I did for my leadership was get an executive coach. I discovered how transformative coaching could be: I felt like I had been running around trying to do everything right, and coaching helped me figure out what was right for me. Since then, I have been on a quest to bring coaching to everyone. </p>
@@ -103,14 +103,19 @@
 
 		<div class="coach_text">
 			<h2> Typical Engagements </h2>
-			<div class="banner_pic"> <img src="images/coachoffers.png" style="width:70%"> </div>
+		</div>
+
+		<div class="offer_wrapper">
+			<div class="offer_pic"> 
+				<img src="images/coachoffers.png" style="width:90%"> 
+			</div>
 		</div>
 
 		<div class="coach_text">
 			<h2> Let's Chat </h2>
 			<p> Get in touch at me@conniekliu.com to schedule a 30-minute introductory call to see if it's a good coaching fit. </p>
 		</div>
-	</div>
+
 
 
 	<div class="contact_wrapper">
@@ -135,8 +140,9 @@
 
 	$(document).ready(function() {
 		menubutton();
-		resize(".timeline_block");
+		resize(".coach_pic");
 		resize(".banner_pic");
+		resize(".offer_pic");
 		$('.menu-icon').append('<img src="images/menu-icon.png" width="100%;" height="100%">');
 		$('.potato').append('<img src="images/favicon.png" align="middle" style="width:75%; min-width: 50px;">');
 	});
@@ -145,8 +151,9 @@
     $( window ).resize(function() {
     	menubutton();
     	toppage();
-    	resize(".timeline_block", "250px");
+    	resize(".coach_pic", "250px");
     	resize(".banner_pic", "400px");
+    	resize(".offer_pic", "400px");
     	var engineer_position = $('#timeline_engineer').offset();
     	engineer_position.left = engineer_position.left - $('#pixel_char').width() / 1.8;
     	engineer_position.top = engineer_position.top + $('#timeline_engineer').height() / 3;
@@ -170,7 +177,7 @@
 	$("#pixel_char").click(function(){
 		window.open('http://www.superconnie64.com');
 	});
-// test
+
 </script>
 
 </html>
