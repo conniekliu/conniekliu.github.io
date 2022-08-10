@@ -29,7 +29,10 @@ h3 {
 }
 
 h4 {
-
+	font-family: "Avenir", sans-serif;
+	color: "black";
+	text-align: center;
+	font-size: 120%;
 }
 
 p {
@@ -40,6 +43,12 @@ p {
 
 a {
 	text-decoration: none;
+	color: #000000;
+	-webkit-transition: color 0.5s ease;
+}
+
+a.par {
+	text-decoration: underline;
 	color: #000000;
 	-webkit-transition: color 0.5s ease;
 }
@@ -67,11 +76,29 @@ header {
 	box-sizing: border-box;
 }
 
+.home {
+	width: 10%;
+	text-align: left;
+}
+
 .navbar {
 	width: 14.3%;
 	display: table-cell;
 	vertical-align: middle;
 	text-align: center;
+}
+
+.navbar_wrapper {
+	width: 30%;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: right;
+}
+
+.navbar2 {
+	width: 1%;
+	display: table-cell;
+	vertical-align: middle;
 }
 
 /* divs */
@@ -138,6 +165,46 @@ header {
 	margin: 0 auto;
 }
 
+.coach_wrapper {
+	margin: 0 auto;
+	width: 60%;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.coach_testimonial {
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+	width: 30%;
+}
+
+.coach_img {
+	width: 15%;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: left;
+}
+
+.coach_text {
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+
+.work_block {
+	width: 100%;
+	float: left;
+	margin-top: 50px;
+}
+
+.work_text {
+	text-align: center;
+	margin-top: 50px;
+	margin: 0 auto;
+	width: 60%;
+}
+
 .contact_wrapper {
 	margin: 0 auto;
 	width: 50%;
@@ -164,6 +231,8 @@ header {
 .work_text {
 	text-align: center;
 	margin-top: 50px;
+	margin: 0 auto;
+	width: 60%;
 }
 
 .work3 {

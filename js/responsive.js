@@ -6,11 +6,15 @@ function menubutton(resizeLimit) {
 		$('.dropdown-menu').hide()
 		$('.dropdown-menu').css('z-index', '1001')
 		$('.navbar').hide()
+		$('.navbar2').hide()
+		$('.home').hide()
 	} else if ($(window).width() > resizeLimit) {
 		$('.menu-icon').hide()
 		$('.dropdown-menu').hide()
 		$('.dropdown-menu').css('z-index', '-1001')
 		$('.navbar').show()
+		$('.navbar2').show()
+		$('.home').show()
 }
 };
 

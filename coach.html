@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!--css linking-->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel='shortcut icon' href='favicon.png' type='image/png'/ >
+
+	<!--fonts-->
+	<link href='https://fonts.googleapis.com/css?family=Avenir' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Gelasio" rel="stylesheet" type='text/css'>
+
+	<!--tab text-->
+	<title> Connie Liu - Coaching </title>
+
+	<!--responsiveness javascript-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+	<script src="js/responsive.js" type="text/javascript"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!--google analytics-->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-70751123-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-70751123-1');
+	</script>
+
+</head>
+
+
+<div class="dropdown-menu">
+	<h3> <a href="index.html">home</a> </h3>
+	<h3> <a href="bio.html">bio</a> </h3>
+	<h3> <a href="coach.html">coaching</a></h3>
+	<h3> <a href="CKL_Resume.pdf">resume</a></h3>
+</div>
+
+
+<header>
+
+	<div>
+		<a href="index.html">
+			<div class="home"> <img src="images/favicon.png" style="width:100%"></div>
+		</a>
+	</div>
+
+	<div class="navbar_wrapper">
+
+	<div class="navbar2">
+		<h4> <a href="bio.html">bio</a> </h4>
+	</div>
+
+	<div class="navbar2">
+		<h4> <a href="coach.html">coaching</a> </h4>
+	</div>
+
+	<div class="navbar2">
+		<h4> <a href="CKL_Resume.pdf">resume</a> </h4>
+	</div>
+	<div class="menu-icon"> </div>
+
+	</div>
+</header>
+
+
+<body>
+	<div class="banner_wrapper">
+		<div class="banner_pic">
+			<img src="images/demodaypre.jpg" style="width:90%">
+		</div>
+
+		<div id="banner_text">
+			<h2> &#10024; </h2>
+			<h2> Do your dream work. </h2>
+			<p style="text-align: center"> I coach <b><i>nonprofit founders</b></i> and <b><i>career changers</b></i> to make their envisioned impact on the world. </p>
+
+		</div>
+	</div>
+
+	<div class="coach_wrapper">
+
+		<div class="coach_img"> <img src="images/kruti.png" style="width:80%"> </div>
+
+		<div class="coach_testimonial">
+
+		<h2> “Connie is exactly the person I needed to meet and work with as I closed one chapter and started another.” </h2>
+
+		<p> <i> Over the course of just a few weeks, Connie helped bring much-needed clarity, process, and even confidence into my life. She is an incredible listener and made me feel so understood throughout our time working together, which made it easy to be completely honest and vulnerable with my thoughts—a true gift that allowed me to reveal things to myself about me that I had not previously considered. I can say, without a doubt, that working with Connie was the best investment in myself I could have made as I prepared for a big shift in my professional life. </i>(Kruti Mehta) </p>
+	</div>
+	</div>
+
+	<div class="coach_wrapper">
+		<div class="coach_text">
+			<h2> Why Coaching? </h2>
+			<p>As a first-time founder at age 23, I had a lot to learn. One of the most valuable things I did for my leadership was get an executive coach. I discovered how transformative coaching could be: I felt like I had been running around trying to do everything right, and coaching helped me figure out what was right for me. Since then, I have been on a quest to bring coaching to everyone. </p>
+
+			<p>Whether you're at a career crossroads or looking to become a more effective leader, let's chat! </p>
+
+		</div>
+
+		<div class="coach_text">
+			<h2> Typical Engagements </h2>
+			<div class="banner_pic"> <img src="images/coachoffers.png" style="width:70%"> </div>
+		</div>
+
+		<div class="coach_text">
+			<h2> Let's Chat </h2>
+			<p> Get in touch at me@conniekliu.com to schedule a 30-minute introductory call to see if it's a good coaching fit. </p>
+		</div>
+	</div>
+
+
+	<div class="contact_wrapper">
+		<h2> find out more </h2>
+		<div class="social_bar">
+			<div class="social_icon">
+				<a href = "https://www.linkedin.com/pub/connie-liu/56/404/b58"><img class="social_icon" src="images/logos/linkedin.png"></a>
+			</div>
+			<div class="social_icon">
+				<a href = "https://medium.com/@ckliu95"><img class="social_icon" src="images/logos/medium.svg"></a>
+			</div>
+			<div class="social_icon">
+				<a href = "http://www.superconnie64.com"><img src="images/pixel-me2-01.png" id="pixel_char_img"/></a>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+
+<script>
+
+	$(document).ready(function() {
+		menubutton();
+		resize(".timeline_block");
+		resize(".banner_pic");
+		$('.menu-icon').append('<img src="images/menu-icon.png" width="100%;" height="100%">');
+		$('.potato').append('<img src="images/favicon.png" align="middle" style="width:75%; min-width: 50px;">');
+	});
+
+
+    $( window ).resize(function() {
+    	menubutton();
+    	toppage();
+    	resize(".timeline_block", "250px");
+    	resize(".banner_pic", "400px");
+    	var engineer_position = $('#timeline_engineer').offset();
+    	engineer_position.left = engineer_position.left - $('#pixel_char').width() / 1.8;
+    	engineer_position.top = engineer_position.top + $('#timeline_engineer').height() / 3;
+		$('#pixel_char').css(engineer_position);
+	});
+
+
+    setTimeout(function(){
+		var engineer_position = $('#timeline_engineer').offset();
+		engineer_position.left = engineer_position.left - $('#pixel_char').width() / 1.8;
+		engineer_position.top = engineer_position.top + $('#timeline_engineer').height() / 3;
+		$('#pixel_char').css(engineer_position);
+		$('#pixel_char').show();
+		$(window).trigger('resize');
+	}, 1000);
+
+	$('.menu-icon').click(function()  {
+		$('.dropdown-menu').fadeToggle();
+	});
+
+	$("#pixel_char").click(function(){
+		window.open('http://www.superconnie64.com');
+	});
+
+</script>
+
+</html>
