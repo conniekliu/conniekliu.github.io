@@ -189,13 +189,15 @@ header {
 
 .offer_wrapper {
 	margin: 0 auto;
-	width: 70%;
+	width: 60%;
 	text-align: center;
 	margin-bottom: 50px;
 }
 
 .offer_pic {
-	min-width: 400px;
+	min-width: 350px;
+	width: 50%;
+	display: table-cell;
 	vertical-align: middle;
 	text-align: center;
 	margin: 0 auto;
