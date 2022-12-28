@@ -223,6 +223,15 @@ header {
 	width: 60%;
 }
 
+.getintouch_wrapper {
+	margin: 0 auto;
+	width: 50%;
+	text-align: center;
+	margin-top: 50px;
+	font-family: "Avenir", sans-serif;
+	color: "black";
+}
+
 .contact_wrapper {
 	margin: 0 auto;
 	width: 50%;
