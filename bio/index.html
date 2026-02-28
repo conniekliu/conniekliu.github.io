@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!--css linking-->
+	<link rel="stylesheet" type="text/css" href="/css/main.css">
+	<link rel='shortcut icon' href='/favicon.png' type='image/png'/ >
+
+	<!--fonts-->
+	<link href='https://fonts.googleapis.com/css?family=Avenir' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Gelasio" rel="stylesheet" type='text/css'>
+
+	<!--tab text-->
+	<title> Connie Liu - Bio </title>
+
+	<!--responsiveness javascript-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+	<script src="/js/responsive.js" type="text/javascript"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-27XRFPJZ6H"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-27XRFPJZ6H');
+	</script>
+
+</head>
+
+<div class="dropdown-menu">
+	<h3> <a href="/">home</a> </h3>
+	<h3> <a href="/bio/">bio</a> </h3>
+	<h3> <a href="/coach/">coaching</a></h3>
+</div>
+
+
+<header>
+
+	<div>
+		<a href="/">
+			<div class="home"> <img src="/images/favicon.png" style="width:100%"></div>
+		</a>
+	</div>
+
+	<div class="navbar_wrapper">
+
+	<div class="navbar">
+		<h4> <a href="/bio/">bio</a> </h4>
+	</div>
+
+	<div class="navbar">
+		<h4> <a href="/coach/">coaching</a> </h4>
+	</div>
+	<div class="menu-icon"> </div>
+
+	</div>
+</header>
+
+
+<body>
+	<div class="highlight_wrapper">
+		<div class="highlight_pic">
+			<img src="/images/conniealley.png" align="middle" style="width:70%">
+		</div>
+
+		<div class="highlight_text">
+			<h2> &#128640; </h2>
+			<h2> Fueling passions. Making change. </h2>
+
+			<p> Connie is the founder of Tandem, mentorship and coaching for startup teams. Previously, she founded Project Invent, an education nonprofit bringing opportunities to innovate to every student in the US. She is recognized as Forbes 30 Under 30 and has an MBA from Stanford and a mechanical engineering degree from MIT. She is also a coach for founders scaling their dreams. </p>
+
+			<h3> featured on </h3>
+
+		<div class="featured_block">
+
+			<div class="featured_icon">
+				<a href="https://www.forbes.com/30-under-30/2020/education/#391c2c9ce6eb"><img class="featured_icon" src="/images/forbes30.png"></a>
+			</div>
+
+			<div class="featured_icon">
+				<a href="https://www.businessinsider.com/most-impressive-students-at-mit-2014-11#connie-liu-designed-a-camera-ring-that-reads-text-to-the-blind-5"><img class="featured_icon" src="/images/bizinside.jpg"></a>
+			</div>
+
+			<div class="featured_icon">
+				<a href="https://www.technologyreview.com/s/612791/future-focused-education-through-invention/"><img class="featured_icon" src="/images/mitalum.jpeg"></a>
+			</div>
+
+		</div>
+		</div>
+
+
+	</div>
+
+	<div class="contact_wrapper">
+		<h2> find out more </h2>
+		<div class="social_bar">
+			<div class="social_icon">
+				<a href = "https://www.linkedin.com/pub/connie-liu/56/404/b58"><img class="social_icon" src="/images/logos/linkedin.png"></a>
+			</div>
+			<div class="social_icon">
+				<a href = "https://medium.com/@ckliu95"><img class="social_icon" src="/images/logos/medium.svg"></a>
+			</div>
+			<div class="social_icon">
+				<a href = "http://www.superconnie64.com"><img src="/images/pixel-me2-01.png" id="pixel_char_img"/></a>
+			</div>
+		</div>
+	</div>
+</body>
+
+
+<script>
+
+	$(document).ready(function() {
+		menubutton();
+		resize(".highlight_pic");
+		$('.menu-icon').append('<img src="/images/menu-icon.png" width="100%;" height="100%">');
+		$('.potato').append('<img src="/images/favicon.png" align="middle" style="width:75%; min-width: 50px;">');
+	});
+
+
+    $( window ).resize(function() {
+    	menubutton();
+    	resize(".highlight_pic", "350px");
+	});
+
+
+	$('.menu-icon').click(function()  {
+		$('.dropdown-menu').fadeToggle();
+	});
+
+</script>
+
+</html>
